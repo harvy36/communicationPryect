@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Red Segura</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Johan Salamanca">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- fevicon -->
+    <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="{% static 'images/loading.gif' %}" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header-top">
+            <div class="header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div class="logo">
+                                        <a href="#"><img src="{% static 'images/logo.png' %}" alt="#" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                            <ul class="top_icon">
+                                <li class="button_login"> <a href="{% url 'login' %}">Ingresar</a> </li>
+                                <li> <a href="{% url 'signup' %}">Registro</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+
+            <!-- end header -->
+            <section class="slider_section">
+                <div class="banner_main">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2 padding_left0">
+                                <div class="menu-area">
+                                <div class="limit-box">
+                                    <nav class="main-menu">
+                                        <ul class="menu-area-main">
+                                            <li class="active"> <a href="#game">Juegos</a> </li>
+                                            <li> <a href="#software">Software</a> </li>
+                                            <li> <a href="#about">Trailer</a> </li>
+                                            <li> <a href="#testimonial">Grupo de desarrollo</a> </li>
+                                            <li> <a href="#contact">Contacto</a> </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
+                                <div class="text-bg">
+                                    <h1>Red Segura </h1>
+                                    <span>es un videojuego educativo que se desarrolla en la época actual. El recorrido<br>
+                                        del videojuego, es una representación ficticia del mapa de conectividad en la red. Su<br>
+                                        protagonista es un hacker ético, encargado de proteger la información de las amenazas que<br>
+                                        se encuentran en la red.<br></span>
+                                    <a href="#">Próximamente ...</a>
+                                </div>
+                            </div>
+                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                                <div class="text-img">
+                                   <figure><img src="{% static 'images/img.png' %}" alt="#"/></figure>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+        
+           </section>
+        </div>
+    </header>
+
+    <!-- our -->
+    <div id="games" class="our">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Juegos</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 margin_bottom">
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="two-box">
+                                <figure><img class="img-responisve" src="{% static 'images/our-image1.jpg' %}" alt="#" /></figure>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+
+                            <div class="Games">
+                                <h3>Simón</h3>
+                                <p>El hacker ético que ahora trabaja con las autoridades para proteger las redes de acceso contra ataques maliciosos utilizando sus conocimientos de ciberseguridad. Es el protagonista.</p>
+                                {% comment %} <a href="#">Free Download</a> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 margin_bottom">
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="two-box">
+                                <figure><img class="img-responisve" style="width: 100%;" src="{% static 'images/our-image2.jpg' %}" alt="#" /></figure>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+
+                            <div class="Games">
+                                <h3>Brandon</h3>
+                                <p>Joven genio experto en desencriptado de datos, se unio a los hachers eticos despues de ser atrapado intentando filtrar una fotos del area 51.</p>
+                                {% comment %} <a href="#">Free Download</a> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="two-box">
+                                <figure><img class="img-responisve" src="{% static 'images/our-image3.jpg' %}" alt="#" /></figure>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+
+                            <div class="Games">
+                                <h3>INCROSS</h3>
+                                <p>Resultante de la mutacion de un malware altamente agresivo y un virus tecno-biologico alienigena que se esta apoderando de todas las redes del mundo entero.</p>
+                                {% comment %} <a href="#">Free Download</a> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- end our -->
+    <!-- We are -->
+    <div id="software" class="We_are">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Software</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                     <div class="box_bg">
+                         <div class="box_bg_img">
+                             <figure><img src="{% static 'images/soft.png' %}"></figure>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 border_right">
+                     <div class="box_text">
+                         <h2>Unity</h2>
+                         <p>Es una poderosa herramienta de desarrollo de juegos, es una herramienta de edición avanzada. El diseño de pantalla predeterminado le presenta una vista de escena donde puede manipular todo en su nivel y una vista de juego que puede iniciar en cualquier momento para probar. Las variables públicas se exponen dentro de la herramienta, por lo que puede sintonizar fácilmente sin sumergirse en el código, incluso mientras se ejecuta el juego. El Editor de Unity es altamente extensible con una interfaz bastante fácil de aprender para crear herramientas personalizadas en el editor. 
+                            </br>
+                            En el marco de la programación, se utiliza c#, desarrollando una buena arquitectura se puede hacer muy buenas cosas para hacer crecer el proyecto y crear impresionantes videojuegos.</p>
+                         <a href="https://unity.com/">Leer mas ...</a>
+                     </div>
+                 </div> 
+            </div>
+            <div class="row">
+                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 border_right">
+                     <div class="box_text">
+                        <h2>Django</h2>
+                        <p>El framework mas popular de python en la web, caterizado por su rapido aprendizaje y agilidad, ademas de contar con grandes actualizaciones a diario. Su arquitectura MVT (modelo, vista, template) permite la orgamización efectiva del proyecto. Una amplia librerias en desarrollo de API's, nos hizo declinarnos por este framework.</p>
+                        <a href="https://www.djangoproject.com/">Leer mas ...</a>
+                     </div>
+                 </div> 
+                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                     <div class="box_bg">
+                         <div class="box_bg_img">
+                            <figure><img src="{% static 'images/soft2.png' %}"></figure>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- end We are -->
+
+    <!-- about  -->
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Gameplay</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="about-box">
+                        {% comment %} <figure><img src="{% static 'images/about.jpg' %}" alt="#" /></figure> {% endcomment %}
+                        <figure>
+                            <iframe width="1010" height="380" src="https://www.youtube.com/embed/Hg39Xp6VxtY" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        </figure> 
+                        <p> Gameplay de introducción a Red Segura 
+                            </br> Realizado por Alejandro Monroy</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end abouts -->
+
+    <!-- testimonial -->
+    <div id="testimonial" class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Integrantes</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 offset-md-2">
+                    <div class="row box">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="testimonial_box">
+                                <figure><img style="width: 150px;height: 187px;" src="{% static 'images/test2.jpg' %}" alt="#" /></figure>
+                            </div>
+                            <div>
+                                <h3>Johan Salamanca</h3>
+                                <p>Development Software</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="testimonial_box">
+                                <figure><img style="width: 150px;height: 187px;" src="{% static 'images/test1.jpeg' %}" alt="#" /></figure>
+                            </div>
+                            <div>
+                                <h3>Alejandro Monroy</h3>
+                                <p>Development Software</p>
+                            </div>
+                        </div>
+                        {% comment %} <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                            <div class="testimonial_box">
+                                <figure><img src="{% static 'images/test3.png' %}" alt="#" /></figure>
+                            </div>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end testimonial -->
+
+    <!-- contact -->
+    <div id="contact" class="contact">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <form class="contact_bg">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <input class="contactus" placeholder="Name" type="text" name="Name">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <input class="contactus" placeholder="Phone" type="text" name="Email">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <input class="contactus" placeholder="Email" type="text" name="Email">
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <button class="send">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+    <!-- end contact -->
+
+    <!--  footer -->
+    <footr>
+        <div class="footer ">
+            <div class="container">
+                <div class="row">
+                    {% comment %} <div class="col-md-12">
+                        <h2>Newsletter</h2>
+                    </div>
+                    <div class="col-md-10 offset-md-1">
+                        <form class="news">
+                            <input class="newslatter" placeholder="Enter Your Email" type="text" name="Enter Your Email">
+                            <button class="submit">Subscribe</button>
+                        </form>
+                    </div> {% endcomment %}
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+                                <div class="address">
+                                    <ul class="social_link">
+                                        <li><a href="#"><img src="{% static 'icon/fb.png' %}"></a></li>
+                                        <li><a href="#"><img src="{% static 'icon/tw.png' %}"></a></li>
+                                        <li><a href="#"><img src="{% static 'icon/lin(2).png' %}"></a></li>
+                                         <li><a href="#"><img src="{% static 'icon/instagram.png' %}"></a></li>
+                                    </ul>
+                                    <a href="index.html"> <img src="{% static 'images/logo.png' %}" alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="address">
+                                    <h3>Enlaces Rapidos</h3>
+                                    <ul class="Menu_footer">
+                                        <li class="active"> <img src="{% static 'images/3.png' %}" alt="#"> <a href="#game">Inicio</a> </li>
+                                        <li><img src="{% static 'images/3.png' %}" alt="#"> <a href="#software">Software</a> </li>
+                                        <li><img src="{% static 'images/3.png' %}" alt="#"> <a href="#about">Trailer</a> </li>
+                                        <li><img src="{% static 'images/3.png' %}" alt="#"> <a href="#testimonial">Integrantes</a> </li>
+                                        <li><img src="{% static 'images/3.png' %}" alt="#"> <a href="#contact">Contacto</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                                {% comment %} <div class="col-lg-3 col-md-6 col-sm-6 ">
+                                    <div class="address">
+                                        <h3>Contacto </h3>
+                                        <ul class="loca">
+                                            <li>
+                                                <a href="#"><img src="{% static 'icon/loc.png' %}" alt="#" /></a>London 145
+                                                <br>United Kingdom </li>
+                                            <li>
+                                                <a href="#"><img src="{% static 'icon/email.png' %}" alt="#" /></a>demo@gmail.com </li>
+                                            <li>
+                                                <a href="#"><img src="{% static 'icon/call.png' %}" alt="#" /></a>+12586954775 </li>
+                                        </ul>
+                                    </div>
+                                </div> {% endcomment %}
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>© 2021 All Rights Reserved. <a href="https://html.design/">Free html Templates</a></p>
+                </div>
+            </div>
+        </div>
+    </footr>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="{% static 'js/jquery.min.js' %}" ></script>
+    <script src="{% static 'js/popper.min.js' %}" ></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}" ></script>
+    <script src="{% static 'js/jquery-3.0.0.min.js' %}" ></script>
+    <script src="{% static 'js/plugin.js' %}" ></script>
+    <!-- sidebar -->
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+</body>
+
+</html>
