@@ -29,6 +29,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', IndexView.as_view()),
     url(r'^rest-auth/', include('rest_auth.urls')),
+    url(r'^rest-auth/registration/', include('rest_auth.registration.urls')),
     url(r'^juego/', include('apps.juego.urls', namespace= "juego" )),
     url(r'^principal/', include('apps.principal.urls', namespace= "principal" )),
     url(r'^dashboard/', include('apps.dashboard.urls', namespace= "dashboard" )),
