@@ -7,10 +7,11 @@ class Score(models.Model):
     user = models.ForeignKey(
         User, on_delete=models.CASCADE
     )
-    time = models.DurationField()
+    time = models.DurationField(blank=True, null=True)
     score = models.IntegerField(default=0)
     damage = models.IntegerField(default=0)
-
+    win = models.BooleanField(default=False)
+    datecreated = models.DateField(null=True, auto_now=False, auto_now_add=True)
     
     def __str__(self):
         return str(self.score)

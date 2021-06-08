@@ -1,0 +1,44 @@
+{% extends 'basedashboard.html' %}
+{% load static %}
+
+{% block context %}
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+        <div class="table-responsive">
+            <table class="table no-wrap">
+                <thead>
+                    <tr>
+                        <th class="border-top-0">#</th>
+                        <th class="border-top-0">Nombre</th>
+                        <th class="border-top-0">Apellido</th>
+                        <th class="border-top-0">Nombre de usuario</th>
+                        <th class="border-top-0">Fecha ultimo ingreso</th>
+                        <th class="border-top-0">Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in object_list %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td class="txt-oflo">{{user.fist_name}}</td>
+                        <td class="txt-oflo">{{user.last_name}}</td>
+                        <td>{{user.username}}</td>
+                        <td class="txt-oflo">{% if user.last_login %}
+                            {{user.last_login}}
+                        {% else %}
+                            ---------
+                        {% endif %}</td>
+                        <td><span class="text-success">{% if user.scoreMax %}
+                            {{user.scoreMax}}
+                        {% else %}
+                            ------------
+                        {% endif %}</span></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
+
