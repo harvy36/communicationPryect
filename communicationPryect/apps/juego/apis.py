@@ -12,9 +12,10 @@ class scoreCreateAPIView(CreateAPIView):
 
     def perform_create(self, serializer):
         try:
-            token = self.request.META['Authorization']
+            token = self.request.META['HTTP_AUTHORIZATION']
             token = token.split()
-            tokenobject = Token.object.get(key= token[1])
+            tokenobject = Token.objects.get(key= token[1])
+            print("token ::", token[1])
             serializer.save(user=tokenobject.user)
         except:
             serializer.save()
